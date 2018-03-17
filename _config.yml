@@ -1,0 +1,11 @@
+theme: jekyll-theme-cayman
+#theme: jekyll-theme-architect
+#theme: minima
+lang: en-US
+
+title: kingfengji aaa bbb ccc ddd
+
+#highlighter: pygments
+
+github:
+  is_project_page: false

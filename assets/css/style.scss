@@ -1,0 +1,60 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@font-face {
+	font-family: "IosevkaTerm";
+	src: url({{ "assets/fonts/iosevka-term-regular.woff2" | absolute_url }}) format("woff2");
+	font-weight: "normal";
+	font-style: "normal";
+}
+
+.main-content code, .main-content pre {
+	font-family: "IosevkaTerm", monospace;
+}
+
+pre {
+	tab-size: 4;
+	-moz-tab-size: 4;
+}
+
+/*
+* Is there a way to force pygments code highlighting renderer instead of rouge under Jekyll 3?
+*/
+figure.highlight {
+	margin: 0;
+}
+.highlight table {
+	border: 0;
+	padding: 0;
+}
+.highlight table td {
+	border: 0;
+	padding: 0 0.25em 0 0;
+}
+.highlight table td.code {
+	border: 0;
+	padding: 0 0.25em
+}
+.main-content .highlight table th pre, .main-content .highlight table td pre {
+	padding: 0;
+}
+.highlight .lineno {
+	border: none;
+	border-radius: 0;
+	border-right: solid 0px;
+	/*color: #aaa;*/
+}
+.highlight .code pre {
+	border: none;
+	white-space: pre;
+	overflow-x: auto;
+	word-wrap: normal;
+}
+.highlight code {
+	display: block;
+	white-space: pre;
+	overflow-x: auto;
+	word-wrap: normal;
+}
